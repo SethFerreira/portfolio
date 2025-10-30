@@ -40,7 +40,6 @@ body {
 
 h1,
 h2,
-h3,
 h4 {
     font-weight: 300;
     text-transform: uppercase
@@ -58,13 +57,6 @@ h2 {
     font-size: 180%;
     letter-spacing: 1px;
 } 
-
-h3 {
-    margin-top: 50px;
-    margin-bottom: 150px;
-    text-align: center;
-    font-size: 170%;
-}
 
 h4 {
     margin-top: 8px;
@@ -193,6 +185,65 @@ h5 {
     align-items: center;
 }
 
+.skills-table img,
+.skills-icon {
+    height: 40px;
+    width: 40px;
+    opacity: 0.8;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-icon[name="logo-html5"] {
+    color: #E34F26;
+}
+
+.skills-icon[name="logo-css3"] {
+    color: #1572B6;
+}
+.skills-icon[name="logo-javascript"] {
+    color: #F7DF1E;
+}
+.skills-icon[name="logo-react"] {
+    color: #61DAFB;
+}
+.skills-icon[name="logo-npm"] {
+    color: #CB3837;
+}
+.skills-icon[name="logo-github"] {
+    color: #ADBAC7;
+}
+
+.skills-table img[alt="Tailwind Css"] {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(44%) saturate(2083%) hue-rotate(160deg) brightness(99%) contrast(97%);
+}
+
+.skills-table img[alt="Java"] {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(92%) saturate(2055%) hue-rotate(355deg) brightness(97%) contrast(95%);
+}
+
+.skills-table img[alt="Redux"] {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(94%) saturate(7473%) hue-rotate(257deg) brightness(96%) contrast(92%);
+}
+
+.skills-table img[alt="Vite"] {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(87%) saturate(1958%) hue-rotate(224deg) brightness(102%) contrast(98%);
+}
+
+.skills-table img[alt="MySQL"] {
+    width: 55px;
+    filter: none;
+}
+
+.skills-table img[alt="Git"] {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(93%) saturate(2213%) hue-rotate(347deg) brightness(97%) contrast(93%);
+}
+
 /* ------ BUTTONS ------ */
 
 .btn:link,
@@ -287,7 +338,7 @@ header {
 
 .section-about-me {
     background: linear-gradient(135deg, rgba(46, 115, 69, 0.2) 50%, transparent 50%);
-    padding: 80px 20px;
+    padding: 140px 0;
 }
 
 /* --------------------------------------------------- */
@@ -295,7 +346,7 @@ header {
 /* --------------------------------------------------- */
 
 .section-projects {
-    padding: 80px 0;
+    padding: 140px 0;
 }
 
 .projects-container {
@@ -331,5 +382,41 @@ header {
     border-radius: 5px;
     font-size: 90%;
     padding: 8px;
+    color: #50c878;
+}
+
+/* --------------------------------------------------- */
+/* SKILLS */
+/* --------------------------------------------------- */
+
+.section-skills {
+    padding: 140px 0;
+}
+
+.skills-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 90%;
+    color: #fff; 
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #50c878; 
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 12px 20px;
+    border-bottom: 3px solid #399457;     
+}
+
+.skills-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(80, 200, 120, 0.3); 
+}
+
+.skills-table td:first-child {
+    font-weight: 400;
     color: #50c878;
 }
