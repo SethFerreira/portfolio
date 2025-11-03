@@ -40,6 +40,7 @@ body {
 
 h1,
 h2,
+h3,
 h4 {
     font-weight: 300;
     text-transform: uppercase
@@ -57,6 +58,14 @@ h2 {
     font-size: 180%;
     letter-spacing: 1px;
 } 
+
+h3 {
+    font-size: 150%;
+    color: #50c878;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
 
 h4 {
     margin-top: 8px;
@@ -419,4 +428,89 @@ header {
 .skills-table td:first-child {
     font-weight: 400;
     color: #50c878;
+}
+
+/* --------------------------------------------------- */
+/* CONTACT */
+/* --------------------------------------------------- */
+
+.section-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0;
+    background: linear-gradient(135deg, rgba(46, 115, 69, 0.2) 10%,rgba(0, 0, 0, 0.2) 90%);
+    
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(80, 200, 120, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(80, 200, 120, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #50c878;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+input,
+textarea {
+    padding: 10px 15px;
+    border: 1px solid rgba(80, 200, 120, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #50c878;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #50c878;
+    color: #fff;
+    border: 2px solid #50c878;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.3s, padding-left 0.4s, border 0.4s;
+}
+
+.btn-submit:hover {
+    border: 2px solid #399457;
 }
