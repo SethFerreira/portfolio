@@ -14,23 +14,24 @@
     <header>
         <nav class="container">
             <ul class="navbar">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero-text-box">
+        <div id="hero" class="hero-text-box">
             <h1>Algenis Ferreira</h1>
             <h2>Full-Stack Developer</h2>
             <p>Driven by a passion for technology, I create, innovate, and push boundaries in the digital world.</p>
             <div class="social-icons-box">
                 <div class="tooltip">
-                    <a href="#"><ion-icon name="document" class="resume social-icon"></ion-icon></a>
+                    <a href="resources/docs/resume.pdf" target="_blank" rel="noopener noreferrer"><ion-icon name="document" class="resume social-icon"></ion-icon></a>
                     <span class="tooltip-text">Resume</span>
                 </div>
                 <div class="tooltip">
-                    <a href="#"><ion-icon name="logo-github" class="github social-icon"></ion-icon></a>
+                    <a href="https://github.com/SethFerreira" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github" class="github social-icon"></ion-icon></a>
                     <span class="tooltip-text">GitHub</span>
                 </div>
                 <div class="tooltip">
@@ -41,7 +42,7 @@
         </div>
     </header>
 
-    <section class="section-about-me">
+    <section id="about" class="section-about-me">
         <div class="container">
             <p>I’m Algenis Ferreira, a Full-Stack Java Developer based in New Jersey. I specialize in building robust front-end and back-end applications with Java, JavaScript, and React. My goal is to leverage my technical skills to contribute to impactful projects and collaborate effectively with teams.</p> 
             
@@ -51,7 +52,7 @@
         </div>
     </section>
 
-    <section class="section-projects">
+    <section id="projects" class="section-projects">
         <div class="container">
             <div class="projects-container">
                 <div>
@@ -128,7 +129,7 @@
         </div>
     </section>
 
-    <section class="section-skills">
+    <section id="skills" class="section-skills">
         <div class="container">
             <table class="skills-table">
                 <thead>
@@ -204,7 +205,7 @@
         </div>
     </section>
 
-    <section class="section-contact">
+    <section id="contact" class="section-contact">
         <div class="contact-container">
             <form method="POST" action="#" class="contact-form">
                 <h3>Let's connect</h3>
