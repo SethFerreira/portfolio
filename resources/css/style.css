@@ -70,6 +70,7 @@ h4 {
     margin-top: 8px;
     margin-bottom: 20px;
     text-align: center;
+    word-spacing: 5px;
 }
 
 h5 {
@@ -99,6 +100,7 @@ h5 {
     margin-bottom: 10px;
     padding-left: 8px;
     font-size: 90%;
+    word-spacing: 1px;
 }
 
 /* ------ ICONS ------ */
@@ -199,7 +201,6 @@ h5 {
     opacity: 0.8;
 }
 
-/* Skill icon colors */
 .skills-icon[name="logo-html5"] { 
     color: #E34F26; 
 }
@@ -382,7 +383,8 @@ header {
     border: 1px ridge #50c878;
     border-radius: 5px;
     height: 300px;
-    opacity: 0.7;
+    opacity: 0.9;
+    object-fit: cover;
 }
 
 .project-context {
@@ -391,6 +393,7 @@ header {
     margin-left: 20px;
     padding: 15px;
     border-radius: 5px;
+    letter-spacing: 1px;
 }
 
 .tech-items {
@@ -445,6 +448,12 @@ header {
 .skills-table td:first-child {
     font-weight: 400;
     color: #50c878;
+}
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* --------------------------------------------------- */
