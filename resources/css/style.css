@@ -104,17 +104,23 @@ h5 {
     margin-bottom: 10px;
     padding-left: 8px;
     font-size: 90%;
-    word-spacing: 1px;
+    letter-spacing: 1.2px;
+    word-spacing: 2px;
 }
 
 /* ------ ICONS ------ */
 
 .social-icons-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 7px;
     margin: 0 auto;
     width: 150px;
+}
+
+.social-icons-box .tooltip:nth-child(3) {
+    margin-left: 3px;
 }
 
 .social-icon {
@@ -215,9 +221,11 @@ h5 {
     color: #F7DF1E; 
 }
 .skills-icon[name="logo-react"] { 
+    display: none;
     color: #61DAFB; 
 }
 .skills-icon[name="logo-npm"] { 
+    display: none;
     color: #CB3837; 
 }
 .skills-icon[name="logo-github"] { 
@@ -225,22 +233,29 @@ h5 {
 }
 
 .skills-table img[alt="Tailwind Css"] {
+    display: none;
     filter: brightness(0) saturate(100%) invert(63%) sepia(44%) saturate(2083%) hue-rotate(160deg) brightness(99%) contrast(97%);
 }
 
 .skills-table img[alt="Java"] {
+    display: none;
     filter: brightness(0) saturate(100%) invert(53%) sepia(92%) saturate(2055%) hue-rotate(355deg) brightness(97%) contrast(95%);
 }
 
 .skills-table img[alt="Redux"] {
+    display: none;
     filter: brightness(0) saturate(100%) invert(20%) sepia(94%) saturate(7473%) hue-rotate(257deg) brightness(96%) contrast(92%);
 }
 
 .skills-table img[alt="Vite"] {
+    display: none;
     filter: brightness(0) saturate(100%) invert(47%) sepia(87%) saturate(1958%) hue-rotate(224deg) brightness(102%) contrast(98%);
 }
 
-.skills-table img[alt="MySQL"] { width: 55px; filter: none; }
+.skills-table img[alt="MySQL"] { 
+    display: none;
+    width: 55px; filter: none; 
+}
 
 .skills-table img[alt="Git"] {
     filter: brightness(0) saturate(100%) invert(57%) sepia(93%) saturate(2213%) hue-rotate(347deg) brightness(97%) contrast(93%);
@@ -404,7 +419,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px; 
+    gap: 15px; 
     margin-left: 0.4rem;
     margin-bottom: 1rem;
 }
@@ -457,25 +472,13 @@ header {
 .tech-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /*gap: 10px;*/
 }
 
-.not-acquired {
-    position: relative;
+/* Temporary rule */
+.tech-icons img[alt="Git"] { 
+    margin-right: 10px;
 }
-
-.not-acquired::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: rgb(132, 12, 12);
-    transform: rotate(-45deg);
-    pointer-events: none;
-}
-
 
 /* --------------------------------------------------- */
 /* CONTACT */
@@ -602,6 +605,10 @@ textarea:focus {
 }
 
 @media (max-width: 992px) {
+    .hero-text-box .social-icons-box {
+        margin-top: 50px;
+    }
+
     .projects-container {
         flex-direction: column;
         align-items: center;
@@ -615,11 +622,16 @@ textarea:focus {
         text-align: center;  
     }
 
+    .project-context p {
+        text-align: left;
+    }
+
     .hero-text-box p,
     .section-about-me .container p {
         width: 90%;
-        margin-left: 0;
+        margin: 0 auto;
     }
+
 }
 
 
@@ -646,6 +658,10 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-top: 205px;
+    }
+
     h1 { 
         font-size: 1.8rem; 
     }
